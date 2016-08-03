@@ -1,0 +1,253 @@
+/* ================================= 
+  Colors
+==================================== */
+/*Fonts*/
+/* ================================= 
+  Fonts
+==================================== */
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Oswald|Qwigley);
+/* ================================= 
+  General Styles
+==================================== */
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  line-height: 1.4;
+  color: #3D4C51; }
+
+a {
+  text-decoration: none;
+  transition: all .5s ease; }
+
+a:hover {
+  color: #ffB058; }
+
+header {
+  display: block;
+  text-align: center; }
+
+.name a {
+  font-family: "Qwigley", cursive;
+  font-size: 1.5em;
+  color: #3D4C51; }
+
+nav {
+  margin-bottom: 30px; }
+
+nav a {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #6F838A;
+  transition: all .6s ease; }
+
+nav a:hover {
+  color: #ffB058; }
+
+.active {
+  color: #5BBEF7; }
+
+.hero {
+  background: url("../img/codehero2.jpg") no-repeat center;
+  background-size: cover;
+  height: 250px; }
+
+.hero-about {
+  background: url("../img/runner.jpg") no-repeat 30%;
+  background-size: cover;
+  height: 250px;
+  position: relative; }
+
+.hero-contact {
+  background: url("../img/social.jpg") no-repeat center;
+  background-size: cover;
+  height: 250px;
+  position: relative; }
+
+.hero p {
+  display: block;
+  font-size: 1.2em;
+  color: #fff;
+  text-align: center;
+  line-height: 1.6;
+  padding: 80px 15px 0; }
+
+.section-title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.3em;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3D4C51;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.section-spacing {
+  padding-top: 40px; }
+
+.project-container {
+  border: 3px solid #BDE2F7;
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto 20px;
+  display: flex; }
+
+.hover-container {
+  position: relative; }
+
+.project-image {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #BDE2F7; }
+
+.hover-overlay {
+  width: 100%;
+  height: 30%;
+  background-color: rgba(59, 75, 81, 0.85);
+  transition: all .6s ease-in-out;
+  opacity: 0;
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  z-index: 10;
+  border: 0; }
+
+.project-container:hover .hover-overlay {
+  opacity: 1; }
+
+.hover-overlay span {
+  display: block;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 25px; }
+
+#projects {
+  padding-bottom: 15px; }
+
+.blue-box {
+  background-color: #BDE2F7; }
+
+.highlight-box {
+  background-color: #BDE2F7;
+  padding: 40px 10px 30px; }
+
+.highlight-box p {
+  text-align: center;
+  margin-bottom: 20px; }
+
+.highlight-box .section-title {
+  margin-top: 0;
+  margin-bottom: 30px; }
+
+.about-content {
+  text-align: center;
+  padding: 10px; }
+
+.skills-section .section-title {
+  font-size: 1em;
+  margin-bottom: 20px; }
+
+.skills-group {
+  margin: 25px auto; }
+
+.about-website a {
+  color: #3D4C51;
+  font-weight: bold;
+  transition: all .5s ease; }
+
+.about-website a:hover {
+  color: #ffB058; }
+
+.contact-content {
+  padding: 0 10px;
+  text-align: center; }
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px; }
+
+.contact-item span {
+  display: flex;
+  align-items: center; }
+
+.contact-item .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-left: 0; }
+
+.contact-item:last-child {
+  margin-bottom: 40px; }
+
+.contact-item a {
+  color: #5BBEF7;
+  transition: all .5s ease; }
+
+.contact-item a:hover {
+  color: #ffB058; }
+
+footer {
+  background-color: #3D4C51;
+  color: #fff;
+  padding-bottom: 40px; }
+
+.social-group {
+  display: flex;
+  justify-content: center;
+  padding-top: 70px; }
+
+footer p {
+  text-align: center;
+  font-size: .8em;
+  padding-top: 10px; }
+
+.photo-circle {
+  display: block;
+  border-radius: 100%;
+  width: 100px;
+  margin: 0 auto;
+  border: 3px solid #fff; }
+
+.hero-about .photo-circle {
+  position: absolute;
+  bottom: -50px;
+  left: 35%;
+  right: 35%; }
+
+.icon {
+  width: 45px;
+  height: 45px;
+  margin: 0 15px; }
+
+.fa-long-arrow-right {
+  margin-left: 8px;
+  font-size: 1.1em; }
+
+.btn-outline {
+  border: 2px solid #6F838A;
+  color: #6F838A;
+  background-color: transparent;
+  border-radius: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: .9em;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  transition: all .6s ease; }
+
+.btn-outline:hover {
+  border-color: #ffB058;
+  color: #ffB058; }
+
+.skills-section .btn-outline {
+  margin-top: 25px; }
+
+/*# sourceMappingURL=style.css.map */

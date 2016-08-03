@@ -1,0 +1,17 @@
+footer {
+    background-color: $dark-grey;
+    color: $white;
+    padding-bottom: 40px;
+}
+
+.social-group {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+footer p {
+    text-align: center;
+    font-size: .8em;
+    padding-top: 10px;
+}

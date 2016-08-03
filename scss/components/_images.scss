@@ -1,0 +1,14 @@
+.photo-circle {
+    display: block;
+    border-radius: 100%;
+    width: 100px;
+    margin: 0 auto;
+    border: 3px solid $white;
+}
+
+.hero-about .photo-circle {
+    position: absolute;
+    bottom: -50px;
+    left: 35%;
+    right: 35%;
+}

@@ -1,0 +1,65 @@
+.section-title {
+    font-family: $stack-titles;
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+    color: $dark-grey;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.section-spacing {
+    padding-top: 40px;
+}
+
+.project-container {
+    border: 3px solid $light-blue;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto 20px;
+    display: flex;
+}
+
+.hover-container {
+    position: relative;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    border: 1px solid $light-blue;
+}
+
+.hover-overlay {
+    width: 100%;
+    height: 30%;
+    background-color: rgba(59, 75, 81, 0.85);
+    transition: all .6s ease-in-out;
+    opacity: 0;
+    position: absolute;
+    bottom: 6px;
+    left: 0;
+    z-index: 10;
+    border: 0;
+}
+
+.project-container:hover .hover-overlay {
+    opacity: 1;
+}
+
+.hover-overlay span {
+    display: block;
+    color: $white;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 25px;
+}
+
+#projects {
+    padding-bottom: 15px;
+}
+
+.blue-box {
+    background-color: $light-blue;
+}

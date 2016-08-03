@@ -1,0 +1,23 @@
+/* ================================= 
+  General Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: $stack-body;
+    font-size: 1em;
+    line-height: 1.4;
+    color: $dark-grey;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+a:hover {
+    color: $orange;
+}

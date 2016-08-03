@@ -1,0 +1,23 @@
+.about-content {
+    text-align: center;
+    padding: 10px;
+}
+
+.skills-section .section-title {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.skills-group {
+    margin: 25px auto;
+}
+
+.about-website a {
+    color: $dark-grey;
+    font-weight: bold;
+    transition: all .5s ease;
+}
+
+.about-website a:hover {
+    color: $orange;
+}

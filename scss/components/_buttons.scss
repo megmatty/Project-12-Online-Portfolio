@@ -1,0 +1,22 @@
+.btn-outline {
+    border: 2px solid $light-grey;
+    color: $light-grey;
+    background-color: transparent;
+    border-radius: 20px;
+    font-family: $stack-body;
+    font-size: .9em;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    transition: all .6s ease;
+}
+
+.btn-outline:hover {
+    border-color: $orange;
+    color: $orange;
+}
+
+.skills-section .btn-outline {
+    margin-top: 25px;
+}

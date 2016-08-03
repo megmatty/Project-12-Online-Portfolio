@@ -1,0 +1,59 @@
+header {
+    display: block;
+    text-align: center;
+}
+
+.name a {
+    font-family: $stack-script;
+    font-size: 1.5em;
+    color: $dark-grey;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+nav a {
+    font-family: $stack-titles;
+    text-transform: uppercase;
+    padding: 10px;
+    color: $light-grey;
+    transition: all .6s ease;
+}
+
+nav a:hover {
+    color: $orange;
+}
+
+.active {
+    color: $text-blue;
+}
+
+.hero {
+    background: url('../img/codehero2.jpg') no-repeat center;
+    background-size: cover;
+    height: 250px;
+}
+
+.hero-about {
+    background: url('../img/runner.jpg') no-repeat 30%;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+
+.hero-contact {
+    background: url('../img/social.jpg') no-repeat center;
+    background-size: cover;
+    height: 250px;
+    position: relative;
+}
+
+.hero p {
+    display: block;
+    font-size: 1.2em;
+    color: $white;
+    text-align: center;
+    line-height: 1.6;
+    padding: 80px 15px 0;
+}
