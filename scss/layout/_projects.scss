@@ -8,6 +8,11 @@
     margin-bottom: 40px;
 }
 
+#work .section-title {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
 .section-spacing {
     padding-top: 40px;
 }
@@ -17,11 +22,43 @@
     padding: 20px;
     width: 90%;
     margin: 0 auto 20px;
-    display: flex;
+    
+    @include tablet {
+        width: 30%;
+    }
+}
+
+#work .project-container {
+    @include tablet {
+        width: 40%;
+        margin: 0 30px 30px;
+    }
+    
+    @include desktop {
+        width: 30%;
+        margin: 0 15px 60px;
+    }
+}
+
+#work .project-container:nth-child(3n) {
+   order: 2;
+   
+   @include desktop {
+       order: 0;
+   }
 }
 
 .hover-container {
     position: relative;
+    height: 242px;
+    
+    @include tablet {    
+       height: 261px;
+    }
+
+    @include desktop {
+        height: 227px;
+    }
 }
 
 .project-image {
@@ -30,17 +67,18 @@
     border: 1px solid $light-blue;
 }
 
+
 .hover-overlay {
     width: 100%;
-    height: 30%;
-    background-color: rgba(59, 75, 81, 0.85);
-    transition: all .6s ease-in-out;
+    height: 100%;
+    background-color: rgba(59, 75, 81, 0.8);
     opacity: 0;
     position: absolute;
-    bottom: 6px;
+    top: 0;
     left: 0;
     z-index: 10;
-    border: 0;
+    border: 0;  
+    transition: all .6s ease-in-out; 
 }
 
 .project-container:hover .hover-overlay {
@@ -50,10 +88,15 @@
 .hover-overlay span {
     display: block;
     color: $white;
-    font-size: 1em;
+    font-size: 1.2em;
+    line-height: 1.4;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 25px;
+    padding: 40% 20px 0;
+    
+    @include desktop {
+        padding-top: 85px;
+    }
 }
 
 #projects {
@@ -63,3 +106,14 @@
 .blue-box {
     background-color: $light-blue;
 }
+
+.project-row {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+
+/* FIX media queries for project container between 320 and 768 */

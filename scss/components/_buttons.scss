@@ -6,10 +6,14 @@
     font-family: $stack-body;
     font-size: .9em;
     display: block;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    margin: 35px auto 25px;
     padding: 5px 10px;
     transition: all .6s ease;
+    
+    @include tablet {
+        margin-top: 20px;
+    }
+    
 }
 
 .btn-outline:hover {
