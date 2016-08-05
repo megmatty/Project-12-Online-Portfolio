@@ -1,16 +1,37 @@
 header {
     display: block;
     text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 910px;
+    background-color: $white;
+    box-shadow: 0 3px 3px -3px $light-grey;
+    z-index: 999;
+    margin: 0 auto;
+    
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 50px;
+    }
+
 }
 
 .name a {
     font-family: $stack-script;
     font-size: 1.5em;
     color: $dark-grey;
+    font-weight: lighter;
 }
 
 nav {
     margin-bottom: 30px;
+    
+    @include tablet {
+        margin-bottom: 0;
+    }
 }
 
 nav a {
@@ -19,7 +40,16 @@ nav a {
     padding: 10px;
     color: $light-grey;
     transition: all .6s ease;
+    
+    @include tablet {
+        padding: 20px;
+    }
 }
+
+nav a:last-child {
+    padding-right: 0;
+}
+
 
 nav a:hover {
     color: $orange;
@@ -33,6 +63,15 @@ nav a:hover {
     background: url('../img/codehero2.jpg') no-repeat center;
     background-size: cover;
     height: 250px;
+    
+    @include tablet {
+        height: 350px;
+    }
+    
+    @include desktop {
+        height: 450px;
+    }
+    
 }
 
 .hero-about {
@@ -40,13 +79,29 @@ nav a:hover {
     background-size: cover;
     height: 250px;
     position: relative;
+    
+    @include tablet {
+        height: 250px;
+    }
+    
+    @include desktop {
+        height: 300px;
+    }    
 }
 
 .hero-contact {
-    background: url('../img/social.jpg') no-repeat center;
+    background: url('../img/social.jpg') no-repeat top;
     background-size: cover;
     height: 250px;
     position: relative;
+    
+    @include tablet {
+        height: 250px;
+    }
+    
+    @include desktop {
+        height: 300px;
+    }  
 }
 
 .hero p {
@@ -56,4 +111,16 @@ nav a:hover {
     text-align: center;
     line-height: 1.6;
     padding: 80px 15px 0;
+    
+        @include tablet {
+            font-size: 1.8em;
+            margin: 0 60px;
+            padding-top: 17%;
+        }
+        
+        @include desktop {
+            font-size: 2em;
+            margin: 0 75px;
+            padding-top: 20%;
+        }
 }

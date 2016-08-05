@@ -4,6 +4,11 @@
     width: 100px;
     margin: 0 auto;
     border: 3px solid $white;
+    
+    @include tablet {
+        width: 125px;
+    }
+    
 }
 
 .hero-about .photo-circle {
