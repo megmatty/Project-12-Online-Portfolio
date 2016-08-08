@@ -3,7 +3,7 @@
     text-align: center;   
 }
 
-.contact-content p {
+.call-to-action {
     margin: 0 10%;
     line-height: 1.6;
     font-size: 1.1em;
@@ -55,8 +55,9 @@
 
 .contact-group {
     margin-top: 30px;
-
+    padding: 0 5px;
     @include tablet {
         margin: 50px 30% 0;
+        padding: 0;
     }
 }

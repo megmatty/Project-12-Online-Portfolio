@@ -1,0 +1,143 @@
+/*OVERLAY*/
+
+#overlay {
+	display: none;
+	background-color: rgba(61, 76, 81, .90);
+	width: 90%;
+	max-width: 716px;
+	height: 75%;
+	min-height: 440px;
+	max-height: 30vh;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border-radius: 25px;
+	border: 2px solid $white;
+	z-index: 3;
+	transform: translate(-50%, -50%);
+	
+	@include tablet {
+	    width: 90%;
+	    height: 60%;
+	    max-height: 450px;
+	}
+	
+	@include desktop {
+	    width: 70%;
+	    max-height: 500px;
+	}
+}
+
+#overlay .prev,
+#overlay .next {
+    visibility: visible;
+	background-color: transparent;
+	z-index: 10;
+	border: 0;
+	position: absolute;
+	top: 84%;
+	padding: 4px;
+	
+	@include tablet {
+	    top: 43%;
+	    padding: 8px;
+	}
+}
+
+#overlay .prev {
+	left: 40px;
+	
+	@include tablet {
+	    left: 10px;
+	}
+}
+
+#overlay .next {
+    right: 40px;
+    
+	@include tablet {
+	    right: 10px;
+	}
+}
+
+#overlay .fa-angle-right,
+#overlay .fa-angle-left  {
+	font-size: 50px;
+	color: #fff;
+}
+
+#overlay h3 {
+    font-family: $stack-titles;
+    font-size: 1.3em;
+    font-weight: lighter;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    margin: 0;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    @include tablet {
+        top: 20%;
+        width: 30%;
+        left: 83%;
+        transform: translateX(-83%);
+    }
+}
+
+#overlay p {
+    display: none;
+
+    @include tablet {
+        display: block;
+        top: 28%;
+        font-size: 1em;
+        color: $white;
+        position: absolute;
+        font-weight: lighter;
+        right: 10%;
+        left: 57%;
+        text-align: left;
+    }
+    
+    @include desktop { 
+        font-size: 1.1em;
+        top: 26%;
+    }
+    
+}
+
+.project-thumbnail {
+    width: 225px;
+    height: 225px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 3px solid $white;
+    
+    @include tablet {
+        width: 275px;
+        height: 275px;
+        top: 20%;
+        left: 15%;
+        transform: translateX(-15%);
+        margin-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -7,7 +7,7 @@
     font-size: .9em;
     display: block;
     margin: 35px auto 25px;
-    padding: 5px 10px;
+    padding: 5px;
     transition: all .6s ease;
     
     @include tablet {
@@ -23,4 +23,44 @@
 
 .skills-section .btn-outline {
     margin-top: 25px;
+}
+
+.btn-outline-light {
+    border: 2px solid $white;
+    color: $white;
+    background-color: transparent;
+    border-radius: 20px;
+    font-family: $stack-body;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 5px;
+    display: block;
+    position: absolute;
+    bottom: 15%;
+    right: 50%;
+    transform: translateX(50%);
+    margin: 0;
+    
+    @include tablet {
+        transition: all .6s ease; 
+        bottom: 8%;
+        right: 10%;
+        transform: translateX(-10%);
+    }
+    
+    @include desktop {
+        bottom: 12%;
+    }   
+      
+}
+
+
+.btn-outline-light:hover {
+    border-color: $orange;
+}
+
+.btn-outline a,
+.btn-outline-light a {
+    padding: 10px;
 }

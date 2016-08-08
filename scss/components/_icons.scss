@@ -2,7 +2,14 @@
     width: 45px;
     height: 45px;
     margin: 0 15px;
+    fill: $white;
+    transition: all .5s ease-in-out;
 }
+
+.icon:hover {
+    fill: $orange;
+}
+
 
 .fa-long-arrow-right {
     margin-left: 8px;
