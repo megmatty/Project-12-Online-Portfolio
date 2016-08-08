@@ -1,6 +1,6 @@
 .about-content {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     
     @include tablet {
         text-align: left;
@@ -14,7 +14,7 @@
     font-size: 1em;
     margin-bottom: 10px;
     
-    @include desktop {
+    @include tablet {
         text-align: left;
     }
 }
@@ -26,7 +26,6 @@
         flex-wrap: wrap;
     }
 }
-
 
 .skills-section p:first-of-type {
     @include desktop {
@@ -56,10 +55,7 @@
     @include desktop {
         order: 2;
         flex-basis: 45%;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-right: 0;
-        margin-left: auto;
+        margin: 0 0 0 auto;
         align-self: center;
         justify-content: space-between;
     }
@@ -79,19 +75,19 @@
 }
 
 .about-website {
-    padding: 0 10%;
+    padding: 0 15px;
+    
+    @include tablet {
+        padding: 0 10%;
+    }
+    
 }
 
 .about-website p {
     padding-left: 0;
 }
 
-.about-website a {
-    color: $dark-grey;
+.about-website a,
+.skills-section p a {
     font-weight: bold;
-    transition: all .5s ease;
-}
-
-.about-website a:hover {
-    color: $orange;
 }

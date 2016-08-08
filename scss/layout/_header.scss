@@ -1,17 +1,19 @@
 header {
-    display: block;
-    text-align: center;
+    display: inline-block;
+    text-align: left;
     position: fixed;
     top: 0;
     width: 100%;
     max-width: 910px;
     background-color: $white;
     box-shadow: 0 3px 3px -3px $light-grey;
-    z-index: 999;
+    z-index: 2;
     margin: 0 auto;
+    height: 110px;
     
     @include tablet {
         display: flex;
+        text-align: center;
         justify-content: space-between;
         align-items: center;
         padding: 0 50px;
@@ -19,17 +21,68 @@ header {
 
 }
 
+/*mobile nav*/
+
+#hamburger {
+    display: inline-block;
+    font-size: 25px;
+    color: $light-grey;
+    cursor: pointer;
+    float: right;
+    padding:  15px;
+}
+
+#mobile-nav {
+    height: auto;
+    text-align: center;
+    font-family: $stack-titles;
+    text-transform: uppercase;
+    box-shadow: 0 3px 3px -3px $light-grey;
+}
+
+#mobile-nav li {
+    padding: 10px;
+    transition: all .5s ease;
+}
+
+#mobile-nav li:first-child {
+    padding-top: 15px;
+}
+
+#mobile-nav li:last-child {
+   padding-bottom: 15px;
+}
+
+#mobile-nav li:hover {
+    background-color: $light-blue;
+}
+
+#mobile-nav li a {
+    padding: 20px 100px;
+}
+
+
+/*end mobile nav*/
+
 .name a {
     font-family: $stack-script;
     font-size: 1.5em;
-    color: $dark-grey;
+    color: $light-grey;
     font-weight: lighter;
+    float: left;
+    padding-left: 15px;
+    
+    @include tablet {
+        padding-left: 0;
+    }
 }
 
 nav {
-    margin-bottom: 30px;
-    
+    display: none;
+
     @include tablet {
+        display: block;
+        background-color: transparent;
         margin-bottom: 0;
     }
 }
@@ -55,11 +108,7 @@ nav a:hover {
     color: $orange;
 }
 
-.active {
-    color: $text-blue;
-}
-
-.hero {
+.hero-index {
     background: url('../img/codehero2.jpg') no-repeat center;
     background-size: cover;
     height: 250px;
@@ -75,14 +124,10 @@ nav a:hover {
 }
 
 .hero-about {
-    background: url('../img/runner.jpg') no-repeat 30%;
+    background: url('../img/runner.jpg') no-repeat 30% bottom;
     background-size: cover;
     height: 250px;
     position: relative;
-    
-    @include tablet {
-        height: 250px;
-    }
     
     @include desktop {
         height: 300px;
@@ -94,23 +139,20 @@ nav a:hover {
     background-size: cover;
     height: 250px;
     position: relative;
-    
-    @include tablet {
-        height: 250px;
-    }
-    
+
     @include desktop {
         height: 300px;
     }  
 }
 
-.hero p {
+.hero-index p {
     display: block;
     font-size: 1.2em;
     color: $white;
     text-align: center;
     line-height: 1.6;
-    padding: 80px 15px 0;
+    padding: 90px 15px 0;
+    margin-top: 0;
     
         @include tablet {
             font-size: 1.8em;
@@ -124,3 +166,11 @@ nav a:hover {
             padding-top: 20%;
         }
 }
+
+
+
+
+/*solve responsive menu z-index issue*/
+
+
+

@@ -23,7 +23,10 @@ a {
     text-decoration: none;
     transition: all .3s ease-in-out;
     color: $dark-grey;
-    font-weight: bold;
+}
+
+.active {
+    color: $text-blue !important;
 }
 
 a:visited {
@@ -34,9 +37,18 @@ a:hover {
     color: $orange;
 }
 
+#overlay a {
+    font-weight: 300;
+    color: $white !important;
+}
+
+#overlay a:hover {
+    color: $orange !important;
+}
+
 .wrapper {
     min-height: 100%;
-    padding-top: 145px;
+    padding-top: 110px;
     margin: 0 auto -200px;
     
     @include tablet {
@@ -49,3 +61,10 @@ a:hover {
         margin: 0 auto;
     }
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
