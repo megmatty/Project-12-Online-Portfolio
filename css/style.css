@@ -31,9 +31,6 @@ a {
 .active {
   color: #5BBEF7 !important; }
 
-a:visited {
-  color: #6F838A; }
-
 a:hover {
   color: #ffB058; }
 
@@ -93,10 +90,18 @@ header {
 
 #mobile-nav {
   height: auto;
+  width: 100%;
   text-align: center;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-  box-shadow: 0 3px 3px -3px #6F838A; }
+  box-shadow: 0 3px 3px -3px #6F838A;
+  position: fixed;
+  top: 110px;
+  left: 50%;
+  margin-left: -50%;
+  z-index: 2;
+  background-color: rgba(59, 75, 81, 0.95);
+  opacity: .95; }
 
 #mobile-nav li {
   padding: 10px;
@@ -109,10 +114,11 @@ header {
   padding-bottom: 15px; }
 
 #mobile-nav li:hover {
-  background-color: #BDE2F7; }
+  background-color: #ffB058; }
 
 #mobile-nav li a {
-  padding: 20px 100px; }
+  padding: 20px 100px;
+  color: #fff; }
 
 /*end mobile nav*/
 .name a {
