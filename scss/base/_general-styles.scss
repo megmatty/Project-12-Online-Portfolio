@@ -23,23 +23,24 @@ a {
     text-decoration: none;
     transition: all .3s ease-in-out;
     color: $dark-grey;
-}
-
-.active {
-    color: $text-blue !important;
-}
-
-a:hover {
-    color: $orange;
+    
+        &:active {
+            color: $text-blue !important;
+        }
+        
+        &:hover {
+            color: $orange;
+        }
 }
 
 #overlay a {
     font-weight: 300;
     color: $white !important;
-}
-
-#overlay a:hover {
-    color: $orange !important;
+    
+        &:hover {
+            color: $orange !important;
+        }
+    
 }
 
 .wrapper {

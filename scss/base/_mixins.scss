@@ -1,5 +1,18 @@
 //Mixins - Media Queries
 
+@mixin mobileLandscape {
+    @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 740px) {
+        @content;
+    }   
+}
+
+@mixin mobileLarge {
+     @media screen and (min-width: 414px) and (max-width: 767px) {
+         @content;
+     }
+}
+
+
 @mixin tablet {
     @media only screen and (min-width: 768px) {
         @content;

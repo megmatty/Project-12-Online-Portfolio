@@ -14,12 +14,12 @@
         margin-top: 20px;
     }
     
-}
-
-.btn-outline:hover {
-    border-color: $orange;
-    color: $orange;
-}
+    &:hover {
+        border-color: $orange;
+        color: $orange;
+    }
+    
+}  
 
 .skills-section .btn-outline {
     margin-top: 25px;
@@ -52,12 +52,10 @@
     @include desktop {
         bottom: 12%;
     }   
-      
-}
-
-
-.btn-outline-light:hover {
-    border-color: $orange;
+    
+    &:hover {
+        border-color: $orange;
+    }
 }
 
 .btn-outline a,

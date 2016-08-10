@@ -14,7 +14,7 @@
 	border-radius: 25px;
 	border: 2px solid $white;
 	z-index: 3;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); /*keeps it centered*/
 	
 	@include tablet {
 	    width: 90%;

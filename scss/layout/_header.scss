@@ -18,10 +18,9 @@ header {
         align-items: center;
         padding: 0 50px;
     }
-
 }
 
-/*mobile nav*/
+/*MOBILE NAV*/
 
 #hamburger {
     display: inline-block;
@@ -51,18 +50,18 @@ header {
 #mobile-nav li {
     padding: 10px;
     transition: all .5s ease;
-}
-
-#mobile-nav li:first-child {
-    padding-top: 15px;
-}
-
-#mobile-nav li:last-child {
-   padding-bottom: 15px;
-}
-
-#mobile-nav li:hover {
-    background-color: $orange;
+    
+        &:first-child {
+            padding-top: 15px;
+        }
+        
+        &:last-child {
+            padding-bottom: 15px;
+        }
+        
+        &:hover {
+            background-color: $orange;
+        }
 }
 
 #mobile-nav li a {
@@ -105,16 +104,18 @@ nav a {
     @include tablet {
         padding: 20px;
     }
+    
+    &:last-child {
+        padding-right: 0;
+    }
+    
+    &:hover {
+        color: $orange;
+    }
+    
 }
 
-nav a:last-child {
-    padding-right: 0;
-}
-
-
-nav a:hover {
-    color: $orange;
-}
+/*HERO IMAGES*/
 
 .hero-index {
     background: url('../img/codehero2.jpg') no-repeat center;
@@ -174,11 +175,6 @@ nav a:hover {
             padding-top: 20%;
         }
 }
-
-
-
-
-/*solve responsive menu z-index issue*/
 
 
 
