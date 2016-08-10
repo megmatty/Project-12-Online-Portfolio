@@ -4,11 +4,10 @@
     margin: 0 15px;
     fill: $white;
     transition: all .5s ease-in-out;
-    
-    &:hover {
-        fill: $orange;
-    }
-    
+}
+
+.icon:hover {
+    fill: $orange;
 }
 
 .fa-long-arrow-right {
