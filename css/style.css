@@ -507,8 +507,9 @@ footer, .push {
   margin: 0 15px;
   fill: #fff;
   transition: all .5s ease-in-out; }
-  .icon:hover {
-    fill: #ffB058; }
+
+.icon:hover {
+  fill: #ffB058; }
 
 .fa-long-arrow-right {
   margin-left: 8px;
