@@ -1,9 +1,10 @@
 .highlight-box {
     background-color: $light-blue;
     padding: 40px 10px 30px;
+    text-align: center;
     
     @include tablet {
-        padding-bottom: 20px;
+        padding-bottom: 40px;
     }
 }
 
@@ -13,7 +14,7 @@
     
     @include tablet {
         text-align: left;
-        padding-left: 35px;
+        padding: 0 0 15px 25px;
         line-height: 1.6;
     }
     

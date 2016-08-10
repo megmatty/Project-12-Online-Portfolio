@@ -61,7 +61,7 @@ $.preload( 'img/codehero2.jpg',
 	var $image = $("<img id='project-thumb' class='project-thumbnail' />");
 	var $projTitle = $("<h3 id='project-title'>Title</h3>");
 	var $caption = $("<p id='project-caption'>Caption goes here</p>");
-	var $liveButton = $("<button id='project-button' class='btn-outline-light'><a href='#' target='_blank'>See live<i class='fa fa-long-arrow-right' aria-hidden='true'></i></a></button>");
+	var $liveButton = $("<a id='project-button' class='btn-outline-light' target='_blank'>See live<i class='fa fa-long-arrow-right' aria-hidden='true'></i></a>");
 	
 	// Add arrow variables
 	var $nextArrow = $('<button class="next"><span class="fa fa-angle-right"></span></button>');
@@ -141,7 +141,7 @@ $.preload( 'img/codehero2.jpg',
             $image.attr('src', projectThumb);
             
             var projectLink = projectList[num].link;
-            $liveButton.children("a").attr('href', projectLink);
+            $liveButton.attr('href', projectLink);
             
                if ( $(window).width() < 767 ) { //don't fade the caption in mobile sizes
                    $overlay.children().not($caption).hide(0).fadeIn(750);
