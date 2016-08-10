@@ -18,9 +18,9 @@ $.preload( 'img/codehero2.jpg',
     'img/icons/twitter-dark.svg'
 );
 
-//RESPONSIVE MENU
 
-     var ham = $('#hamburger');
+//RESPONSIVE MENU
+    var ham = $('#hamburger');
         
     //Hamburger Function
     ham.show();
@@ -29,6 +29,7 @@ $.preload( 'img/codehero2.jpg',
     ham.click(function() {
         $('#mobile-nav').slideToggle("slow");
     });
+    
     
     $("#mobile-nav li a").click(function() {
         $("#mobile-nav").slideUp();
@@ -42,7 +43,7 @@ $.preload( 'img/codehero2.jpg',
         function checkWindowWidth() {
             var width = $(window).width();
             
-            if (width <= 500) { 
+            if (width <= 760) { 
                 $('#hamburger').show();
                 $('#mobile-nav').hide();      
                 
@@ -128,6 +129,7 @@ $.preload( 'img/codehero2.jpg',
     //Create Project in Overlay
         //Takes a number as parameter which is passed from the index number of the item clicked in the click handler
     function displayProject(num) {
+    
            //Updates overlay text to correct info from array based on index
            var projectTitle = projectList[num].title; //take index number from click (num)
            $projTitle.text(projectTitle);
@@ -141,8 +143,13 @@ $.preload( 'img/codehero2.jpg',
             var projectLink = projectList[num].link;
             $liveButton.children("a").attr('href', projectLink);
             
-            $overlay.children().hide(0).fadeIn(750);
-            $overlay.fadeIn(750); //fade in overlay
+               if ( $(window).width() < 767 ) { //don't fade the caption in mobile sizes
+                   $overlay.children().not($caption).hide(0).fadeIn(750);
+                   $overlay.fadeIn(750); //fade in overlay
+               } else {
+                   $overlay.children().hide(0).fadeIn(750);
+                   $overlay.fadeIn(750); //fade in overlay
+               }
     }
     
     //Click handler for Projects

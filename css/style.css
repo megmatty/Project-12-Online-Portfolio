@@ -5,7 +5,7 @@
   Fonts
 ==================================== */
 @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|Oswald:300,400|Qwigley);
-/*Fonts*/
+/*Font Stacks*/
 /* ================================= 
   General Styles
 ==================================== */
@@ -27,19 +27,16 @@ a {
   text-decoration: none;
   transition: all .3s ease-in-out;
   color: #3D4C51; }
-
-.active {
-  color: #5BBEF7 !important; }
-
-a:hover {
-  color: #ffB058; }
+  a:active {
+    color: #5BBEF7 !important; }
+  a:hover {
+    color: #ffB058; }
 
 #overlay a {
   font-weight: 300;
   color: #fff !important; }
-
-#overlay a:hover {
-  color: #ffB058 !important; }
+  #overlay a:hover {
+    color: #ffB058 !important; }
 
 .wrapper {
   min-height: 100%;
@@ -79,7 +76,7 @@ header {
       align-items: center;
       padding: 0 50px; } }
 
-/*mobile nav*/
+/*MOBILE NAV*/
 #hamburger {
   display: inline-block;
   font-size: 25px;
@@ -106,15 +103,12 @@ header {
 #mobile-nav li {
   padding: 10px;
   transition: all .5s ease; }
-
-#mobile-nav li:first-child {
-  padding-top: 15px; }
-
-#mobile-nav li:last-child {
-  padding-bottom: 15px; }
-
-#mobile-nav li:hover {
-  background-color: #ffB058; }
+  #mobile-nav li:first-child {
+    padding-top: 15px; }
+  #mobile-nav li:last-child {
+    padding-bottom: 15px; }
+  #mobile-nav li:hover {
+    background-color: #ffB058; }
 
 #mobile-nav li a {
   padding: 20px 100px;
@@ -149,13 +143,12 @@ nav a {
   @media only screen and (min-width: 768px) {
     nav a {
       padding: 20px; } }
+  nav a:last-child {
+    padding-right: 0; }
+  nav a:hover {
+    color: #ffB058; }
 
-nav a:last-child {
-  padding-right: 0; }
-
-nav a:hover {
-  color: #ffB058; }
-
+/*HERO IMAGES*/
 .hero-index {
   background: url("../img/codehero2.jpg") no-repeat center;
   background-size: cover;
@@ -204,7 +197,6 @@ nav a:hover {
       margin: 0 75px;
       padding-top: 20%; } }
 
-/*solve responsive menu z-index issue*/
 .section-title {
   font-family: "Oswald", sans-serif;
   font-size: 1.3em;
@@ -227,6 +219,16 @@ nav a:hover {
   width: 90%;
   margin: 0 auto 20px;
   cursor: pointer; }
+  @media screen and (min-width: 375px) {
+    .project-container {
+      max-width: 75%; } }
+  @media only screen and (orientation: landscape) and (min-width: 320px) and (max-width: 740px) {
+    .project-container {
+      width: 223px;
+      height: 223px; } }
+  @media screen and (min-width: 414px) and (max-width: 767px) {
+    .project-container {
+      max-width: 65%; } }
   @media only screen and (min-width: 768px) {
     .project-container {
       width: 30%; } }
@@ -242,7 +244,6 @@ nav a:hover {
   #work .project-container {
     width: 30%;
     margin: 0 15px 60px; } }
-
 #work .project-container:nth-child(3n) {
   order: 2; }
   @media only screen and (min-width: 1024px) {
@@ -251,7 +252,7 @@ nav a:hover {
 
 .hover-container {
   position: relative;
-  height: 242px; }
+  max-width: 100%; }
   @media only screen and (min-width: 768px) {
     .hover-container {
       height: 184.39px; } }
@@ -267,8 +268,8 @@ nav a:hover {
     height: 227px; } }
 
 .project-image {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   border: 1px solid #BDE2F7; }
 
 .hover-overlay {
@@ -313,7 +314,6 @@ nav a:hover {
     justify-content: space-between;
     flex-wrap: wrap; } }
 
-/* FIX media queries for project container between 320 and 768 */
 .highlight-box {
   background-color: #BDE2F7;
   padding: 40px 10px 30px; }
@@ -395,10 +395,9 @@ nav a:hover {
       margin: 0 0 0 auto;
       align-self: center;
       justify-content: space-between; } }
-
-@media only screen and (min-width: 1024px) {
-  .skills-group:last-child {
-    margin-right: 0; } }
+  @media only screen and (min-width: 1024px) {
+    .skills-group:last-child {
+      margin-right: 0; } }
 
 @media only screen and (min-width: 1024px) {
   .skills-section .btn-outline {
@@ -437,6 +436,11 @@ nav a:hover {
   margin: 10px auto;
   padding: 10px;
   font-size: 1.1em; }
+  .contact-item:last-child {
+    margin-bottom: 40px; }
+    @media only screen and (min-width: 768px) {
+      .contact-item:last-child {
+        margin-bottom: 0; } }
 
 .contact-item span {
   display: flex;
@@ -448,18 +452,11 @@ nav a:hover {
   margin-right: 10px;
   margin-left: 0; }
 
-.contact-item:last-child {
-  margin-bottom: 40px; }
-  @media only screen and (min-width: 768px) {
-    .contact-item:last-child {
-      margin-bottom: 0; } }
-
 .contact-item a {
   color: #5BBEF7;
   transition: all .5s ease; }
-
-.contact-item a:hover {
-  color: #ffB058; }
+  .contact-item a:hover {
+    color: #ffB058; }
 
 .contact-group {
   margin-top: 30px;
@@ -475,6 +472,7 @@ footer {
   padding-bottom: 40px; }
 
 footer, .push {
+  /*pushes footer to bottom*/
   height: 200px; }
 
 .social-group {
@@ -509,9 +507,8 @@ footer, .push {
   margin: 0 15px;
   fill: #fff;
   transition: all .5s ease-in-out; }
-
-.icon:hover {
-  fill: #ffB058; }
+  .icon:hover {
+    fill: #ffB058; }
 
 .fa-long-arrow-right {
   margin-left: 8px;
@@ -531,10 +528,9 @@ footer, .push {
   @media only screen and (min-width: 768px) {
     .btn-outline {
       margin-top: 20px; } }
-
-.btn-outline:hover {
-  border-color: #ffB058;
-  color: #ffB058; }
+  .btn-outline:hover {
+    border-color: #ffB058;
+    color: #ffB058; }
 
 .skills-section .btn-outline {
   margin-top: 25px; }
@@ -564,9 +560,8 @@ footer, .push {
   @media only screen and (min-width: 1024px) {
     .btn-outline-light {
       bottom: 12%; } }
-
-.btn-outline-light:hover {
-  border-color: #ffB058; }
+  .btn-outline-light:hover {
+    border-color: #ffB058; }
 
 .btn-outline a,
 .btn-outline-light a {
@@ -587,7 +582,8 @@ footer, .push {
   border-radius: 25px;
   border: 2px solid #fff;
   z-index: 3;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  /*keeps it centered*/ }
   @media only screen and (min-width: 768px) {
     #overlay {
       width: 90%;

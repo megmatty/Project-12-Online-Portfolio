@@ -42,7 +42,6 @@
     }
 }
 
-
 .skills-group {
     margin: 25px auto;
     
@@ -59,11 +58,11 @@
         align-self: center;
         justify-content: space-between;
     }
-}
-
-.skills-group:last-child {
-    @include desktop {
-        margin-right: 0;
+    
+    &:last-child {
+        @include desktop {
+            margin-right: 0;
+        }
     }
 }
 
@@ -80,7 +79,6 @@
     @include tablet {
         padding: 0 10%;
     }
-    
 }
 
 .about-website p {

@@ -11,7 +11,6 @@
     @include tablet {
         text-align: left;
     }
-    
 }
 
 .contact-item {
@@ -21,6 +20,14 @@
     margin: 10px auto;
     padding: 10px;
     font-size: 1.1em;
+    
+        &:last-child {
+             margin-bottom: 40px;
+             
+             @include tablet {
+                 margin-bottom: 0;
+             }   
+        }
 }
 
 .contact-item span {
@@ -35,27 +42,20 @@
     margin-left: 0;
 }
 
-.contact-item:last-child {
-    margin-bottom: 40px;
-    
-    @include tablet {
-        margin-bottom: 0;
-    }
-    
-}
 
 .contact-item a {
     color: $text-blue;
     transition: all .5s ease;
-}
-
-.contact-item a:hover {
-    color: $orange;
+    
+        &:hover {
+            color: $orange;
+        }
 }
 
 .contact-group {
     margin-top: 30px;
     padding: 0 5px;
+    
     @include tablet {
         margin: 50px 30% 0;
         padding: 0;
