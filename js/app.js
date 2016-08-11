@@ -43,7 +43,7 @@ $.preload( 'img/codehero2.jpg',
         function checkWindowWidth() {
             var width = $(window).width();
             
-            if (width <= 760) { 
+            if (width <= 750) { 
                 $('#hamburger').show();
                 $('#mobile-nav').hide();      
                 
