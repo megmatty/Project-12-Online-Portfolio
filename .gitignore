@@ -6,3 +6,5 @@
 *.map
 
 *.map
+
+*.sass-cache
