@@ -109,13 +109,16 @@ $.preload( 'img/codehero2.jpg',
         projectList.push(newProject);
     }
 
-
     //Projects added to array - meant to be expandable
+    addProject("Moodful","img/projects/moodful.png","https://mymoodful.herokuapp.com","Moodful is way for you to track and analyze your moods while using some basic mindfulness principles via a simple interface. Built with Node.js, MongoDB & Mongoose, Jade, Passport, Mocha/Chai (testing), and deployed with Heroku.");
+
+    addProject("Trivia Nerd","img/projects/trivia.png","https://megmatty.github.io/Trivia-Nerd/","TriviaNerd is a multiple-choice trivia game where the object is to fill the score bar by correctly answering 10 of 12 questions. At the end of the game, players receive their score along with their assigned rank. Built using JS/jQuery and the Open Trivia Database API.");
+
     addProject("Interactive Video Player","img/projects/video-player.png",
         "https://megmatty.github.io/Project-7-Interactive-Video-Player",
         "This video player has custom controls created with CSS and Javascript. There is a functional caption track as well as an interactive transcript which highlights the text as the video plays. The text can be clicked on to jump to the appropriate time index in the video.");
         
-    addProject("Web App Dashboard","img/projects/dashboard.png","https://megmatty.github.io/Project-9-Web-App-Dashboard","This page is an example of a data dashboard for a fictional web app. It uses Charts.js to generate the charts and graphs, local storage to remember profile settings, and loops through JSON data to generate the users lists.");
+    addProject("Web App Dashboard","img/projects/dashboard.png","https://megmatty.github.io/Project-9-Web-App-Dashboard","This page is an example of a data dashboard for a fictional web app. It uses Charts.js to generate the charts and graphs, local storage to remember profile settings, and loops through JSON data to generate the users' lists.");
     
     addProject("Image Gallery","img/projects/image-gallery.png","https://megmatty.github.io/Project-4-Interactive-Photo-Gallery","One of my first projects written in jQuery, this image gallery will generate a lightbox on image click with previous and next buttons for navigation. It also allows you to filter images by keyword searches, such as 'snow' or 'lake'.");
     
@@ -123,7 +126,6 @@ $.preload( 'img/codehero2.jpg',
     
     addProject("Responsive Website","img/projects/responsive.png","https://megmatty.github.io/Project-2-Responsive-Layout","Another important basic skill in web development today is responsive web design. This basic site was built mobile first and uses flexbox to handle the resizing of page elements. It also will display a 'hamburger' menu for the smallest screens instead of the full navigation.");
     
-    addProject("Web API Gallery","img/projects/webapp.png","https://megmatty.github.io/Project-10-API-Gallery","This is an exercise in using Ajax to retrieve JSON API data and put it to use on a web page. This page features 2 galleries on a single page with a shared lightbox. The first displays Star Trek movies from OMDB, and the second displays pictures from Flickr.");
     
 
     //Create Project in Overlay
