@@ -110,6 +110,8 @@ $.preload( 'img/codehero2.jpg',
     }
 
     //Projects added to array - meant to be expandable
+    addProject("Let's Play","img/projects/letsplay.png","https://letsplayapp.herokuapp.com","Let's Play gives gamers a way to find and create a list of games they like and get matched with and contact other people who enjoy the same games. MERN stack: React/Redux, Node.js, Express.js, MongoDB & Mongoose; Passport, Mocha/Chai, and deployed with Heroku.");
+
     addProject("Moodful","img/projects/moodful.png","https://mymoodful.herokuapp.com","Moodful is way for you to track and analyze your moods while using some basic mindfulness principles via a simple interface. Built with Node.js, MongoDB & Mongoose, Jade, Passport, Mocha/Chai (testing), and deployed with Heroku.");
 
     addProject("Trivia Nerd","img/projects/trivia.png","https://megmatty.github.io/Trivia-Nerd/","TriviaNerd is a multiple-choice trivia game where the object is to fill the score bar by correctly answering 10 of 12 questions. At the end of the game, players receive their score along with their assigned rank. Built using JS/jQuery and the Open Trivia Database API.");
