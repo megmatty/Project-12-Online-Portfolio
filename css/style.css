@@ -86,6 +86,7 @@ header {
   padding: 15px; }
 
 #mobile-nav {
+  display: none;
   height: auto;
   width: 100%;
   text-align: center;
