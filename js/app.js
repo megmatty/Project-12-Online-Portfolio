@@ -43,7 +43,7 @@ $.preload( 'img/codehero2.jpg',
         function checkWindowWidth() {
             var width = $(window).width();
             
-            if (width <= 750) { 
+            if (width <= 767) { 
                 $('#hamburger').show();
                 $('#mobile-nav').hide();      
                 
@@ -60,7 +60,7 @@ $.preload( 'img/codehero2.jpg',
 	var $overlay = $('<div id="overlay"></div>');
 	var $image = $("<img id='project-thumb' class='project-thumbnail' />");
 	var $projTitle = $("<h3 id='project-title'>Title</h3>");
-	var $caption = $("<p id='project-caption'>Caption goes here</p>");
+	var $caption = $("<p id='project-caption'>Caption</p>");
 	var $liveButton = $("<a id='project-button' class='btn-outline-light' target='_blank'>See live<i class='fa fa-long-arrow-right' aria-hidden='true'></i></a>");
 	
 	// Add arrow variables
@@ -124,9 +124,9 @@ $.preload( 'img/codehero2.jpg',
     
     addProject("Image Gallery","img/projects/image-gallery.png","https://megmatty.github.io/Project-4-Interactive-Photo-Gallery","One of my first projects written in jQuery, this image gallery will generate a lightbox on image click with previous and next buttons for navigation. It also allows you to filter images by keyword searches, such as 'snow' or 'lake'.");
     
-    addProject("Registration Form","img/projects/regform.png","https://megmatty.github.io/Project-3-Online-Registration-Form","A simple but important skill in web development is making attractive and functional forms. This online registration form was built for mobile, tablet, and desktop layouts, and features custom dropdown menus, checkboxes, and radio buttons.");
+    addProject("Registration Form","img/projects/regform.png","https://megmatty.github.io/Project-3-Online-Registration-Form","A simple but important skill in web development is making attractive and functional HTML forms. This online registration form was built for mobile, tablet, and desktop layouts, and features custom CSS dropdown menus, checkboxes, and radio buttons.");
     
-    addProject("Responsive Website","img/projects/responsive.png","https://megmatty.github.io/Project-2-Responsive-Layout","Another important basic skill in web development today is responsive web design. This basic site was built mobile first and uses flexbox to handle the resizing of page elements. It also will display a 'hamburger' menu for the smallest screens instead of the full navigation.");
+    addProject("Responsive Website","img/projects/responsive.png","https://megmatty.github.io/Project-2-Responsive-Layout","Another important basic skill in web development today is responsive web design. This basic site was built mobile first and uses CSS flexbox to handle the resizing of page elements. It also uses jQuery to display a 'hamburger' menu for the smallest screens instead of the full navigation.");
     
     
 
